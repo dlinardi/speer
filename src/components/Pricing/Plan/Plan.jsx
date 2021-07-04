@@ -59,7 +59,7 @@ function Plan(props) {
         {renderPlanPoints(points)}
       </ul>
 
-      <StyledLinkButton to="/payment">
+      <StyledLinkButton to="#">
         SELECT
       </StyledLinkButton>
     </div>

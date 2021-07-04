@@ -45,7 +45,7 @@ function MenuBlackBg(props) {
             <StyledLink shouldHover={true} to="/">WHAT IS IT</StyledLink>
           </li>
           <li>
-              <StyledLink shouldHover={true} to="/payment">PERKS</StyledLink>
+              <StyledLink shouldHover={true} to="/">PERKS</StyledLink>
           </li>
           <li>
               <StyledLink shouldHover={true} to="/pricing">PRICING</StyledLink>
