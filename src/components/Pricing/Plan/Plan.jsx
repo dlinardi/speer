@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
+
 import './Plan.scss';
 
 // Component imports
@@ -25,14 +27,16 @@ function Plan(props) {
     margin: 10px 0;
   `;
 
-  const PlanButton = styled.button`
+  const StyledLinkButton = styled(Link)`
     width: 60%;
     background-color: ${colour};
     padding: 10px 20px;
+    text-align: center;
     border-radius: 26px;
     border: none;
     color: #fff;
     font-weight: 700;
+    text-decoration: none;
     transition: all 450ms ease-in;
     &:hover {
       cursor: pointer;
@@ -49,7 +53,10 @@ function Plan(props) {
       <ul style={{padding: 0}}>
         {renderPlanPoints(points)}
       </ul>
-      <PlanButton>SELECT</PlanButton>
+
+      <StyledLinkButton to="/payment">
+        SELECT
+      </StyledLinkButton>
     </div>
   );
 }
