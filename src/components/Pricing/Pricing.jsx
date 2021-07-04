@@ -4,6 +4,8 @@ import './Pricing.scss';
 // Component imports
 import MenuBlackBg from '../Menu/MenuBlackBg';
 import Plan from './Plan/Plan';
+import Perks from '../Perks/Perks';
+import Footer from '../Footer/Footer'
 
 function Pricing() {
 
@@ -54,18 +56,22 @@ function Pricing() {
   <Plan />
 
   return (
-    <section className="pricing-container">
-      <MenuBlackBg activeColour={'#191919'} />
-      <Container>
-        <div className="pricing-content">
-          <h1 style={{fontSize: '40px', color: '#fff', fontWeight: '700'}}>PRICING</h1>
-          <p style={{fontSize: '26px', color: '#fff', paddingBottom: '200px'}}>Test out our app today! Choose from three subscription based payment models.</p>
-        </div>
-        <div className="pricing__plans-container">
-          {renderPlans(plans)}
-        </div>
-      </Container>
-    </section>
+    <>
+      <section className="pricing-container">
+        <MenuBlackBg activeColour={'#191919'} />
+        <Container>
+          <div className="pricing-content">
+            <h1 style={{fontSize: '40px', color: '#fff', fontWeight: '700'}}>PRICING</h1>
+            <p style={{fontSize: '26px', color: '#fff', paddingBottom: '100px'}}>Test out our app today! Choose from three subscription based payment models.</p>
+          </div>
+          <div className="pricing__plans-container">
+            {renderPlans(plans)}
+          </div>
+        </Container>
+      </section>
+      <Perks />
+      <Footer />
+    </>
   );
 }
 

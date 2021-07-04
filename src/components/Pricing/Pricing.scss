@@ -1,6 +1,6 @@
 .pricing-container {
   position: relative;
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
   background-color: #191919;
 }
@@ -10,4 +10,5 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 150px;
 }
