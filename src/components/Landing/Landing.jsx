@@ -1,11 +1,12 @@
 import './Landing.scss';
 
 // Component imports
+import Menu from "../Menu/Menu";
 
 function Landing() {
   return (
     <div className="landing-container">
-      <h1>landing page</h1>
+      <Menu />
     </div>
   );
 }
