@@ -8,7 +8,6 @@ import './Menu.scss';
 
 function MenuBlackBg(props) {
   const [menuStatus, setMenuStatus] = useState(false);
-  const [hover, setHover] = useState(false);
 
   const { activeColour } = props;
 

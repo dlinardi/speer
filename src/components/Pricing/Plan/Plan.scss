@@ -1,0 +1,14 @@
+.plan-container {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.plan-point {
+  color: #fff;
+  list-style: none;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
