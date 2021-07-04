@@ -6,7 +6,7 @@ import Menu from "../Menu/Menu";
 function Landing() {
   return (
     <div className="landing-container">
-      <Menu activeColour={"#88171a"} />
+      <Menu activeColour={"#D34848"} />
     </div>
   );
 }

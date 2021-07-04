@@ -70,6 +70,14 @@
   transition: all 250ms ease-in;
 }
 
+.menu-bubble-black-bg {
+  margin: 30px 0 20px 20px;
+  background-color: #1FE1E9;
+  transform: translate(-100%, -100%);
+  border-radius: 50%;
+  transition: all 250ms ease-in;
+}
+
 
 // Menu opened styling
 
@@ -101,21 +109,17 @@
     padding: 5px 30px;
   }
 
-  li a {
-    // color: #fff;
-    // font-size: 22px;
-    // font-weight: 700;
-    // text-decoration: none;
-    // transition: all 450ms ease-in;
-
-    // &:hover {
-    //   transition: all 450ms ease-in;
-    // }
-  }
-
 }
 
 .menu-bubble.active {
+  width: 450px;
+  height: 400px;
+  transform: translate(-30%, -30%);
+  transition: all 250ms ease-in;
+}
+
+// menu bubble styling for black background sections
+.menu-bubble-black-bg.active {
   width: 450px;
   height: 400px;
   transform: translate(-30%, -30%);

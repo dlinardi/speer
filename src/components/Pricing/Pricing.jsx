@@ -1,13 +1,12 @@
 import './Pricing.scss';
 
 // Component imports
-import Menu from "../Menu/Menu";
+import MenuBlackBg from '../Menu/MenuBlackBg';
 
 function Pricing() {
   return (
     <div className="pricing-container">
-      <h1>pricing page</h1>
-      <Menu />
+      <MenuBlackBg activeColour={'#191919'} />
     </div>
   );
 }
