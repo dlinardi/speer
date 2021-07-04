@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMusic } from '@fortawesome/free-solid-svg-icons'
 
 import './Plan.scss';
 
@@ -15,7 +17,10 @@ function Plan(props) {
   // return an li for each point
   const renderPlanPoints = (arr) => {
     return points.map((point) => (
-      <li key={price} className="plan-point">{point}</li>
+      <li key={price} className="plan-point">
+        <FontAwesomeIcon icon={faMusic} size="sm" className="music-note-plan" />
+        {point}
+      </li>
     ))
   };
 
