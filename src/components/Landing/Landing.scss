@@ -3,4 +3,82 @@
 	height: 100vh;
 	overflow: hidden;
   background-color: #D34848;
+  z-index: 0;
+}
+
+.slide-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.hero-slider {
+  z-index: -1;
+}
+
+.hero-caption-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 960px;
+
+  .hero-caption-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .hero-caption-subtitle {
+    width: 75%;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 20px;
+  }
+}
+
+.gradient-button {
+  position: relative;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #f72359;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 100px;
+}
+
+.gradient-button span {
+  position: relative;
+  pointer-events: none;
+}
+.gradient-button::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, #4405f7, transparent);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  transition: width .2s ease, height .2s ease;
+}
+.gradient-button:hover::before {
+  --size: 400px;
 }
