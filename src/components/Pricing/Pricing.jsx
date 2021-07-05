@@ -23,6 +23,7 @@ function Pricing() {
       price: '$9',
       points: ['Very good', 'Amazing', 'Perfect job', 'Love this', "It's so good", 'Features'],
       colour: '#D24848',
+      compColour: '#f07d7d'
     },
     {
       type: 'ADVANCED',
@@ -30,6 +31,7 @@ function Pricing() {
       price: '$99',
       points: ['Very very good', 'Even Amazing', 'Perfect job', 'Love this more', "It's so so good", 'More Features'],
       colour: '#FFB33F',
+      compColour: '#ffc875'
     },
     {
       type: 'PRO',
@@ -37,6 +39,7 @@ function Pricing() {
       price: '$120',
       points: ['Very very good', 'Even more', 'Perfect job', 'Love this more', "It's so so good", 'More Features'],
       colour: '#1FE1E9',
+      compColour: '#9efcff'
     },
   ]
     
@@ -49,6 +52,7 @@ function Pricing() {
         price={plan.price}
         points={plan.points}
         colour={plan.colour}
+        compColour={plan.compColour}
       />
     ))
   };

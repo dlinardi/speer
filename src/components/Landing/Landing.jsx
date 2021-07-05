@@ -26,7 +26,7 @@ function Landing(props) {
         <div className="hero-caption-container">
           <div className="hero-caption-title">INTERACTIVE CONCERT EXPERIENCE</div>
           <div className="hero-caption-subtitle">Experience your favourite artists like never before and from the comfort of your own home.</div>
-          <Link to="/pricing"><GradientButton text={'TRY IT NOW'} /></Link>
+          <Link to="/pricing"><GradientButton mainColour={'#f72359'} radialGradientColour={'#FFB33F'} text={'TRY IT NOW'} /></Link>
         </div>
         <AutoplaySlider
           className="hero-slider"

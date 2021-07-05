@@ -3,7 +3,7 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: #f72359;
+  // background: #f72359;
   padding: 1em 2em;
   border: none;
   color: white;
@@ -27,7 +27,7 @@
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(circle closest-side, #FFB33F, transparent);
+  // background: radial-gradient(circle closest-side, #FFB33F, transparent);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   transition: width .2s ease, height .2s ease;

@@ -1,7 +1,17 @@
 import { useRef, useEffect } from 'react';
+import styled from 'styled-components';
 import './GradientButton.scss';
 
 const GradientButton = (props) => {
+
+  const { mainColour, radialGradientColour } = props;
+
+  const Button = styled.button`
+    background: ${mainColour};
+    &:before {
+      background: radial-gradient(circle closest-side, ${radialGradientColour}, transparent);
+    }
+  `;
 
   const buttonRef = useRef(null);
 
@@ -21,7 +31,7 @@ const GradientButton = (props) => {
     return () => reference ? reference.removeEventListener('mousemove', mouseMoveEvent) : null
   }, [buttonRef])
   
-  return <button ref={buttonRef} className="gradient-button"><span>{props.text}</span></button>;
+  return <Button ref={buttonRef} className="gradient-button"><span>{props.text}</span></Button>;
 }
 
 export default GradientButton;

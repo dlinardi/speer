@@ -6,12 +6,11 @@ import { faMusic } from '@fortawesome/free-solid-svg-icons'
 import './Plan.scss';
 
 // Component imports
+import GradientButton from '../../GradButton/GradientButton';
 
 function Plan(props) {
 
-  const { type, frequency, price, points, colour } = props;
-
-  console.log(props, "<<<< props")
+  const { type, frequency, price, points, colour, compColour } = props;
 
   // iterate through points prop array
   // return an li for each point
@@ -32,23 +31,6 @@ function Plan(props) {
     margin: 10px 0;
   `;
 
-  const StyledLinkButton = styled(Link)`
-    width: 60%;
-    background-color: ${colour};
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 26px;
-    border: none;
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 450ms ease-in;
-    &:hover {
-      cursor: pointer;
-      opacity: 0.75;
-    }
-  `;
-
   return (
     <div className="plan-container">
       <h4 style={{ color: `${colour}`, fontSize: '23px', margin: 0}}>{type}</h4>
@@ -59,9 +41,7 @@ function Plan(props) {
         {renderPlanPoints(points)}
       </ul>
 
-      <StyledLinkButton to="#">
-        SELECT
-      </StyledLinkButton>
+      <GradientButton mainColour={colour} radialGradientColour={compColour} text={'SELECT'}/>
     </div>
   );
 }
