@@ -1,0 +1,14 @@
+.gn-container {
+  position: relative;
+	height: 100%;
+	overflow: hidden;
+  background-color: #191919;
+  padding-bottom: 150px;
+}
+
+.gn-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -14,8 +14,8 @@ function Plan(props) {
   // iterate through points prop array
   // return an li for each point
   const renderPlanPoints = (arr) => {
-    return points.map((point) => (
-      <li key={price} className="plan-point">
+    return points.map((point, index) => (
+      <li key={`${index}_${price}`} className="plan-point">
         <FontAwesomeIcon icon={faMusic} size="sm" className="music-note-plan" />
         {point}
       </li>

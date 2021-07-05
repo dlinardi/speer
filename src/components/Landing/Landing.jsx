@@ -16,7 +16,7 @@ import GradientButton from '../GradButton/GradientButton';
 import Footer from '../Footer/Footer';
 import PerksMain from '../PerksMain/PerksMain';
 import Reviews from '../Reviews/Reviews';
-
+import GetNow from '../GetNow/GetNow';
 
 function Landing(props) {
 
@@ -46,6 +46,7 @@ function Landing(props) {
       </section>
       <PerksMain />
       <Reviews />
+      <GetNow />
       <Footer />
     </>
   );

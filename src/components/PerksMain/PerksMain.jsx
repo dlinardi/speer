@@ -40,8 +40,8 @@ function PerksMain() {
   ];
 
   const renderPerks = (arr) => {
-    return arr.map((perk) => (
-      <div className="perk-main-col">
+    return arr.map((perk, index) => (
+      <div key={`${index}_perk.colour`} className="perk-main-col">
         <Divider colour={perk.colour}/>
         <h3 className="perk-main-title" style={{color: perk.colour}}>{perk.title}</h3>
         <p className="perk-main-caption">{perk.caption}</p>

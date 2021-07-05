@@ -25,7 +25,7 @@ function Menu(props) {
     text-decoration: none;
     transition: all 450ms ease-in;
     &:hover {
-      color: ${props => (props.shouldHover ? `${activeColour}` : "none")};
+      color: ${props => (props.hover ? `${activeColour}` : "none")};
     }
   `;
 
@@ -42,13 +42,13 @@ function Menu(props) {
         </div>
         <ul className={menuStatus ? "nav active" : 'nav'} id="nav">
           <li>
-            <StyledLink shouldHover={true} to="/">WHAT IS IT</StyledLink>
+            <StyledLink hover={"true"} to="/">WHAT IS IT</StyledLink>
           </li>
           <li>
-              <StyledLink shouldHover={true} to="/">PERKS</StyledLink>
+              <StyledLink hover={"true"} to="/">PERKS</StyledLink>
           </li>
           <li>
-              <StyledLink shouldHover={true} to="/pricing">PRICING</StyledLink>
+              <StyledLink hover={"true"} to="/pricing">PRICING</StyledLink>
           </li>
         </ul>
       </div>

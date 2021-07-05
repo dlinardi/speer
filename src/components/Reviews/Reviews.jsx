@@ -33,8 +33,8 @@ function Reviews() {
   ];
 
   const renderReviews = (arr) => {
-    return arr.map((review) => (
-      <div className="review-col">
+    return arr.map((review, index) => (
+      <div key={`${index}_${review.type}`} className="review-col">
         <Rating rating={5} />
         <h3 className="review-type">{review.type}</h3>
         <p className="review-caption">{review.caption}</p>
