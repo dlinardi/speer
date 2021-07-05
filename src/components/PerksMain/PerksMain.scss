@@ -1,0 +1,33 @@
+.perks-main-container {
+  position: relative;
+	height: 100%;
+	overflow: hidden;
+  background-color: #191919;
+}
+
+.perk-main-col {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+  .perk-main-title {
+    font-weight: 700;
+    font-size: 28px;
+    width: 40%;
+    margin: 0;
+  }
+
+  .perk-main-caption {
+    color: #fff;
+    font-size: 18px;
+  }
+
+}
+
+.perk-main-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+  // align-items: center;
+}
