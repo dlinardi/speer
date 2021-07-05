@@ -4,9 +4,10 @@ import './GradientButton.scss';
 
 const GradientButton = (props) => {
 
-  const { mainColour, radialGradientColour } = props;
+  const { mainColour, radialGradientColour, textColour } = props;
 
   const Button = styled.button`
+    color: ${textColour};
     background: ${mainColour};
     &:before {
       background: radial-gradient(circle closest-side, ${radialGradientColour}, transparent);
@@ -23,12 +24,13 @@ const GradientButton = (props) => {
 
   useEffect(() => {
     let reference = buttonRef.current;
+    console.log('buttonRef>>>', buttonRef)
 
     if (buttonRef) {
-      buttonRef.current.addEventListener('mousemove', mouseMoveEvent);
+      reference.addEventListener('mousemove', mouseMoveEvent);
     }
 
-    return () => reference ? reference.removeEventListener('mousemove', mouseMoveEvent) : null
+    return () => reference.removeEventListener('mousemove', mouseMoveEvent);
   }, [buttonRef])
   
   return <Button ref={buttonRef} className="gradient-button"><span>{props.text}</span></Button>;

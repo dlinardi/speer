@@ -37,8 +37,8 @@ function Perks() {
   ];
 
   const renderPerks = (arr) => {
-    return arr.map((perk) => (
-      <div className="perk-col">
+    return arr.map((perk, index) => (
+      <div key={`${index}_perk`} className="perk-col">
         <Divider />
         <h3 className="perk-title">{perk.title}</h3>
         <p className="perk-caption">{perk.caption}</p>

@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import './Reviews.scss';
 
 // Component imports
 import Menu from '../Menu/Menu';
 import Rating from './Rating';
+import GradientButton from '../GradButton/GradientButton';
 
 import speakerOne from '../../assets/small-speaker-1.png';
 import speakerTwo from '../../assets/small-speaker-2.png';
@@ -45,6 +47,13 @@ function Reviews() {
   return (
     <section className="reviews-main-container">
       <Menu activeColour={'#1FE1E9'} />
+      
+      <div className="try-button">
+        <Link to="/pricing">
+          <GradientButton mainColour={'#fff'} radialGradientColour={'#191919'} textColour={'#1FE1E9'} text={'TRY IT NOW'} />
+        </Link>
+      </div>
+
       <Container>
         <div className="reviews-container">
           <div className="reviews-images">

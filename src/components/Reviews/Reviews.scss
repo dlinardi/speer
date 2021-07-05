@@ -45,7 +45,7 @@
 
     #speakerTwo {
       position: absolute;
-      top: 150px;
+      top: 180px;
     }
 
     .speakers {
@@ -71,5 +71,12 @@
     padding-bottom: 150px;
     // align-items: center;
   }
+}
+
+.try-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px 50px;
 }
 
