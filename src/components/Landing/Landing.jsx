@@ -15,6 +15,7 @@ import Menu from "../Menu/Menu";
 import GradientButton from '../GradButton/GradientButton';
 import Footer from '../Footer/Footer';
 import PerksMain from '../PerksMain/PerksMain';
+import Reviews from '../Reviews/Reviews';
 
 
 function Landing(props) {
@@ -44,6 +45,7 @@ function Landing(props) {
         </div>
       </section>
       <PerksMain />
+      <Reviews />
       <Footer />
     </>
   );

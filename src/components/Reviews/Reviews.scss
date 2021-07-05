@@ -1,0 +1,75 @@
+.reviews-main-container {
+  position: relative;
+	height: 100%;
+	overflow: hidden;
+  background-color: #1FE1E9;
+  padding-bottom: 150px;
+}
+
+.review-col {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+
+  .review-type {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .review-caption {
+    font-size: 18px;
+    width: 100%;
+  }
+
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+
+
+  .reviews-images {
+    margin-left: -50px;
+
+    #speakerOne {
+      position: absolute;
+      top: 0;
+      margin-left: -100px;
+    }
+
+    #speakerTwo {
+      position: absolute;
+      top: 150px;
+    }
+
+    .speakers {
+      height: 350px;
+    }
+  }
+
+}
+
+.reviews-main-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .header-reviews {
+    width: 80%;
+  }
+
+  .review-content {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+    // align-items: center;
+  }
+}
+
