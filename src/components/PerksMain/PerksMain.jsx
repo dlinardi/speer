@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import './PerksMain.scss';
 
 // Component imports
 import MenuBlackBg from '../Menu/MenuBlackBg';
+import GradientButton from '../GradButton/GradientButton';
 
 function PerksMain() {
 
@@ -52,6 +54,9 @@ function PerksMain() {
   return (
     <section className="perks-main-container">
       <MenuBlackBg activeColour={'#191919'} />
+      <div className="try-button">
+            <Link to="/pricing"><GradientButton mainColour={'#f72359'} radialGradientColour={'#FFB33F'} text={'TRY IT NOW'} /></Link>
+      </div>
       <Container>
         <div className="perks-main-content">
           <h1 style={{ fontSize: '40px', color: '#fff', fontWeight: '700' }}>PERKS</h1>

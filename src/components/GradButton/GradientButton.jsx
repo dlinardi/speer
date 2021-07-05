@@ -18,8 +18,9 @@ const GradientButton = (props) => {
 
   const mouseMoveEvent = (e) => {
     const { x, y } = buttonRef.current.getBoundingClientRect();
-    buttonRef.current.style.setProperty('--x', e.pageX - x + 'px');
-    buttonRef.current.style.setProperty('--y', e.pageY - y + 'px');
+
+    buttonRef.current.style.setProperty('--x', e.clientX - x + 'px');
+    buttonRef.current.style.setProperty('--y', e.clientY - y + 'px');
   }
 
   useEffect(() => {
