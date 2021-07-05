@@ -50,7 +50,7 @@ function Reviews() {
       
       <div className="try-button">
         <Link to="/pricing">
-          <GradientButton mainColour={'#fff'} radialGradientColour={'#191919'} textColour={'#1FE1E9'} text={'TRY IT NOW'} />
+          <GradientButton mainColour={'#fff'} radialGradientColour={'#d1d1d1'} textColour={'#1FE1E9'} text={'TRY IT NOW'} />
         </Link>
       </div>
 
